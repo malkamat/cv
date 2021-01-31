@@ -1,0 +1,13 @@
+%liens-decoration {
+    a {
+        text-decoration: none;
+    }
+    
+    a:link {
+        color: $secondary-color;
+    }
+    
+    a:visited {
+        color: $secondary-color;
+    }
+}

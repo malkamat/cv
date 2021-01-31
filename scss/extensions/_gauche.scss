@@ -1,0 +1,10 @@
+%sections-gauche {
+    width: 383px;
+    background-color: $main-color;
+    @media screen and (max-width: 1190px) {
+    
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+}

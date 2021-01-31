@@ -1,0 +1,328 @@
+@charset "UTF-8";
+body {
+  margin: 0 auto;
+  width: 1191px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1em;
+}
+@media screen and (max-width: 1190px) {
+  body {
+    width: 100%;
+  }
+}
+body a {
+  text-decoration: none;
+}
+body a:link {
+  color: #404040;
+}
+body a:visited {
+  color: #404040;
+}
+body .header {
+  display: flex;
+}
+@media screen and (max-width: 1190px) {
+  body .header {
+    flex-direction: column;
+  }
+}
+body .header .header-left__photo--image-arrondie {
+  width: 180px;
+  border-radius: 50%;
+  border: 4px rgba(5, 5, 5, 0.1) solid;
+}
+body .header .header-right__titre-principal {
+  margin-top: 100px;
+  font-size: 3em;
+}
+@media screen and (max-width: 1190px) {
+  body .header .header-right__titre-principal {
+    text-align: center;
+  }
+}
+body .header .header-right__titre-principal--prenom {
+  color: #feca07;
+}
+body .header .header-right__titre-principal--sous-titre {
+  font-style: normal;
+  line-height: 50px;
+  font-size: 0.7em;
+}
+body .header .header-right__titre-principal--sous-titre::before {
+  content: "dével";
+  border-bottom: 2px #feca07 solid;
+}
+body .main-wrapper {
+  display: flex;
+}
+@media screen and (max-width: 1190px) {
+  body .main-wrapper {
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+}
+body .main-wrapper .formation__titre {
+  border-bottom: 2px #feca07 solid;
+  margin-right: 48px;
+  font-size: 2em;
+}
+@media screen and (max-width: 1190px) {
+  body .main-wrapper .formation__titre {
+    padding-left: 30px;
+  }
+}
+body .main-wrapper .formation i {
+  color: #feca07;
+  margin: 0 35px 20px 0;
+}
+body .main-wrapper .formation .formation-container {
+  display: flex;
+  color: #404040;
+  padding-left: 35px;
+}
+@media screen and (max-width: 1190px) {
+  body .main-wrapper .formation .formation-container {
+    margin-bottom: 50px;
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  body .main-wrapper .formation .formation-container {
+    flex-direction: column;
+    margin-bottom: 50px;
+    padding-left: 50px;
+  }
+}
+body .main-wrapper .formation .formation-container .formation-container-gauche {
+  position: relative;
+  margin-left: 0px;
+  width: 200px;
+}
+body .main-wrapper .formation .formation-container .formation-container-gauche__date::before {
+  content: " ";
+  border-radius: 50%;
+  border: 5px #feca07 solid;
+  position: absolute;
+  left: -30px;
+}
+body .main-wrapper .formation .formation-container .formation-container-gauche__date--actual::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  color: #feca07;
+  position: absolute;
+  left: -30px;
+}
+body .main-wrapper .formation .formation-container .formation-container-droite {
+  margin: 10px;
+  width: 100%;
+}
+body .main-wrapper .formation .formation-container .formation-container-droite__info {
+  margin-right: 55px;
+}
+body .main-wrapper .experiences-professionelles {
+  margin-top: 200px;
+}
+body .main-wrapper .experiences-professionelles__titre {
+  border-bottom: 2px #feca07 solid;
+  margin-right: 48px;
+  font-size: 2em;
+}
+@media screen and (max-width: 1190px) {
+  body .main-wrapper .experiences-professionelles__titre {
+    padding-left: 30px;
+    padding-bottom: 15px;
+  }
+}
+body .main-wrapper .experiences-professionelles i {
+  color: #feca07;
+  margin: 0 35px 20px 0;
+}
+body .main-wrapper .experiences-professionelles .experiences-professionelles-container {
+  display: flex;
+  color: #404040;
+  padding-left: 35px;
+}
+@media screen and (max-width: 1190px) {
+  body .main-wrapper .experiences-professionelles .experiences-professionelles-container {
+    margin-bottom: 50px;
+    padding-left: 50px;
+  }
+}
+@media screen and (max-width: 800px) {
+  body .main-wrapper .experiences-professionelles .experiences-professionelles-container {
+    flex-direction: column;
+    margin-bottom: 50px;
+    padding-left: 50px;
+  }
+}
+body .main-wrapper .experiences-professionelles .experiences-professionelles-container .experiences-professionelles-container-gauche {
+  position: relative;
+  margin-left: 0px;
+  width: 200px;
+}
+body .main-wrapper .experiences-professionelles .experiences-professionelles-container .experiences-professionelles-container-gauche__date::before {
+  content: " ";
+  border-radius: 50%;
+  border: 5px #feca07 solid;
+  position: absolute;
+  left: -30px;
+}
+body .main-wrapper .experiences-professionelles .experiences-professionelles-container .experiences-professionelles-container-gauche__date--actual::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  color: #feca07;
+  position: absolute;
+  left: -30px;
+}
+body .main-wrapper .experiences-professionelles .experiences-professionelles-container .experiences-professionelles-container-droite {
+  margin: 10px;
+  margin-left: 25px;
+  width: 100%;
+}
+body .main-wrapper .experiences-professionelles .experiences-professionelles-container .experiences-professionelles-container-droite__info {
+  margin-right: 55px;
+}
+body .main-wrapper .recommendations {
+  margin-top: 200px;
+}
+@media screen and (max-width: 1190px) {
+  body .main-wrapper .recommendations {
+    width: 100%;
+  }
+}
+body .main-wrapper .recommendations__titre {
+  border-bottom: 2px #feca07 solid;
+  margin-right: 48px;
+  font-size: 2em;
+}
+@media screen and (max-width: 1190px) {
+  body .main-wrapper .recommendations__titre {
+    padding-left: 30px;
+    padding-bottom: 15px;
+  }
+}
+body .main-wrapper .recommendations i {
+  color: #feca07;
+  margin: 0 35px 20px 0;
+}
+body .main-wrapper .recommendations .recommendations-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #404040;
+}
+@media screen and (max-width: 800px) {
+  body .main-wrapper .recommendations .recommendations-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+body .main-wrapper .recommendations .recommendations-grid p {
+  line-height: 1.5em;
+  margin: 0 0 77px;
+}
+body .main-wrapper .recommendations .recommendations-grid .recommendations-grid-gauche {
+  padding-left: 10px;
+}
+body .main-wrapper .recommendations .recommendations-grid .recommendations-grid-droite {
+  grid-column-start: 2;
+}
+@media screen and (max-width: 800px) {
+  body .main-wrapper .recommendations .recommendations-grid .recommendations-grid-droite {
+    grid-column-start: 1;
+  }
+}
+body .main-wrapper .cv-aside {
+  display: flex;
+  flex-direction: column;
+  color: #404040;
+}
+body .main-wrapper .cv-aside .cv-aside-contact__list {
+  padding: 0;
+  margin: 35px 0 50px 48px;
+  list-style-type: none;
+}
+body .main-wrapper .cv-aside .cv-aside-contact__item {
+  padding-bottom: 20px;
+}
+body .main-wrapper .cv-aside .cv-aside-a-propos {
+  flex: 1;
+}
+body .main-wrapper .cv-aside .cv-aside-a-propos__paragraphe {
+  text-align: left;
+  margin: 35px 48px;
+  line-height: 25px;
+}
+body .main-wrapper .cv-aside .cv-aside-a-propos__list {
+  padding: 0;
+  margin: 35px 0 50px 48px;
+  list-style-type: none;
+}
+body .main-wrapper .cv-aside .cv-aside-a-propos__item {
+  padding-bottom: 20px;
+  font-size: larger;
+}
+body .main-wrapper .cv-aside .cv-aside-a-propos__item a {
+  cursor: pointer;
+}
+body .main-wrapper .cv-aside .cv-aside-loisirs__list {
+  margin: 0;
+  padding: 35px 0 40px 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 3em;
+  font-weight: lighter;
+}
+body .main-wrapper .cv-aside .cv-aside-loisirs__list--rond {
+  border: 2px solid #404040;
+  border-radius: 50%;
+  padding: 7px;
+}
+
+body .header .header-left__photo {
+  margin: 65px 0 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body .header .header-left, body .main-wrapper .cv-aside {
+  width: 383px;
+  background-color: #feca07;
+}
+@media screen and (max-width: 1190px) {
+  body .header .header-left, body .main-wrapper .cv-aside {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+body .header .header-right, body .main-wrapper .formation, body .main-wrapper .experiences-professionelles, body .main-wrapper .recommendations {
+  width: 746px;
+  margin-left: 62px;
+}
+@media screen and (max-width: 1190px) {
+  body .header .header-right, body .main-wrapper .formation, body .main-wrapper .experiences-professionelles, body .main-wrapper .recommendations {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+  }
+}
+
+body .main-wrapper .cv-aside h2 {
+  text-align: center;
+  background-color: #404040;
+  color: #feca07;
+  font-size: 1em;
+  margin: 0;
+  font-size: 1.5EM;
+  line-height: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
