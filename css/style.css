@@ -32,7 +32,7 @@ body a:hover::after {
 body .header {
   display: flex;
 }
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1210px) {
   body .header {
     flex-direction: column;
   }
@@ -46,7 +46,7 @@ body .header .header-right__titre-principal {
   margin-top: 100px;
   font-size: 3em;
 }
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1210px) {
   body .header .header-right__titre-principal {
     text-align: center;
   }
@@ -66,7 +66,7 @@ body .header .header-right__titre-principal--sous-titre::before {
 body .main-wrapper {
   display: flex;
 }
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1210px) {
   body .main-wrapper {
     display: flex;
     width: 100%;
@@ -79,7 +79,7 @@ body .main-wrapper .formation__titre {
   margin-right: 48px;
   font-size: 2em;
 }
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1210px) {
   body .main-wrapper .formation__titre {
     padding-left: 30px;
   }
@@ -93,7 +93,7 @@ body .main-wrapper .formation .formation-container {
   color: #404040;
   padding-left: 35px;
 }
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1210px) {
   body .main-wrapper .formation .formation-container {
     margin-bottom: 50px;
     padding-left: 50px;
@@ -132,6 +132,12 @@ body .main-wrapper .formation .formation-container .formation-container-droite {
 body .main-wrapper .formation .formation-container .formation-container-droite__info {
   margin-right: 55px;
 }
+@media screen and (max-width: 600px) {
+  body .main-wrapper .formation .formation-container .formation-container-droite {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 body .main-wrapper .experiences-professionelles {
   margin-top: 100px;
 }
@@ -140,7 +146,7 @@ body .main-wrapper .experiences-professionelles__titre {
   margin-right: 48px;
   font-size: 2em;
 }
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1210px) {
   body .main-wrapper .experiences-professionelles__titre {
     padding-left: 30px;
     padding-bottom: 15px;
@@ -155,7 +161,7 @@ body .main-wrapper .experiences-professionelles .experiences-professionelles-con
   color: #404040;
   padding-left: 35px;
 }
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1210px) {
   body .main-wrapper .experiences-professionelles .experiences-professionelles-container {
     margin-bottom: 50px;
     padding-left: 50px;
@@ -165,7 +171,7 @@ body .main-wrapper .experiences-professionelles .experiences-professionelles-con
   body .main-wrapper .experiences-professionelles .experiences-professionelles-container {
     flex-direction: column;
     margin-bottom: 50px;
-    padding-left: 50px;
+    padding-left: 40px;
   }
 }
 body .main-wrapper .experiences-professionelles .experiences-professionelles-container .experiences-professionelles-container-gauche {
@@ -195,12 +201,18 @@ body .main-wrapper .experiences-professionelles .experiences-professionelles-con
 body .main-wrapper .experiences-professionelles .experiences-professionelles-container .experiences-professionelles-container-droite__info {
   margin-right: 55px;
 }
+@media screen and (max-width: 600px) {
+  body .main-wrapper .experiences-professionelles .experiences-professionelles-container .experiences-professionelles-container-droite {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 body .main-wrapper .recommendations {
   margin-top: 100px;
 }
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1210px) {
   body .main-wrapper .recommendations {
-    width: 100%;
+    max-width: 100%;
   }
 }
 body .main-wrapper .recommendations__titre {
@@ -208,7 +220,7 @@ body .main-wrapper .recommendations__titre {
   margin-right: 48px;
   font-size: 2em;
 }
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1210px) {
   body .main-wrapper .recommendations__titre {
     padding-left: 30px;
     padding-bottom: 15px;
@@ -265,7 +277,7 @@ body .main-wrapper .cv-aside .cv-aside-a-propos {
 }
 body .main-wrapper .cv-aside .cv-aside-a-propos__paragraphe {
   text-align: left;
-  margin: 35px 48px;
+  margin: 25px 0px 0 48px;
   line-height: 25px;
 }
 body .main-wrapper .cv-aside .cv-aside-a-propos__list {
@@ -335,7 +347,6 @@ body .main-wrapper .cv-aside .cv-aside-loisirs .container {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  padding: 10px;
   margin: 10px 0;
   flex-wrap: wrap;
 }
@@ -359,10 +370,10 @@ body .header .header-left, body .main-wrapper .cv-aside {
   width: 383px;
   background-color: #feca07;
 }
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1210px) {
   body .header .header-left, body .main-wrapper .cv-aside {
     display: flex;
-    width: auto;
+    width: 100%;
     justify-content: center;
   }
 }
@@ -371,7 +382,7 @@ body .header .header-right, body .main-wrapper .formation, body .main-wrapper .e
   width: 746px;
   margin-left: 62px;
 }
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1210px) {
   body .header .header-right, body .main-wrapper .formation, body .main-wrapper .experiences-professionelles, body .main-wrapper .recommendations {
     display: flex;
     flex-direction: column;
