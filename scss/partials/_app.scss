@@ -1,13 +1,11 @@
 body {
     margin: 0 auto;
-    width: 1191px;
+    max-width: 1191px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.1em;
+    overflow-x: hidden;
+    width: 100%;
 
-    @media screen and (max-width: 1190px) {
-        width: 100%;
-
-    }
 
 
 
@@ -21,6 +19,27 @@ body {
         &:visited {
             color: $secondary-color;
         }
+
+    }
+
+    // span {
+    //     width: auto;
+    // }
+
+
+    a::after {
+        content: '';
+        display: block;
+        width: 0px;
+        margin: 5px auto 0 auto;
+        height: 2px;
+        border-radius: 2px;
+        background: $secondary-color;
+        transition: all 0.2s ease-out;
+    }
+
+    a:hover::after {
+        width: 100%;
     }
 
     .header {
@@ -199,7 +218,7 @@ body {
 
         .experiences-professionelles {
             @extend %sections-droite;
-            margin-top: 200px;
+            margin-top: 100px;
 
 
 
@@ -291,7 +310,7 @@ body {
 
         .recommendations {
             @extend %sections-droite;
-            margin-top: 200px;
+            margin-top: 100px;
 
             @media screen and (max-width: 1190px) {
 
@@ -375,12 +394,17 @@ body {
                     padding: 0;
                     margin: 35px 0 50px 48px;
                     list-style-type: none;
+                    display: inline-flex;
+                    flex-direction: column;
 
                 }
 
                 &__item {
                     padding-bottom: 20px;
+                    width: fit-content;
+
                 }
+
             }
 
             .cv-aside-a-propos {
@@ -419,12 +443,76 @@ body {
                     font-size: 3em;
                     font-weight: lighter;
 
-                    &--rond {
-                        border: 2px solid $secondary-color;
-                        border-radius: 50%;
-                        padding: 7px;
-                    }
                 }
+
+                .tooltip {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 40px;
+                    cursor: pointer;
+                }
+                
+                /* Style text tooltip */
+                .tooltipText {
+                    background-color: #fff;
+                    position: absolute;
+                    bottom: 130%;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    font-size: 14px;
+                    opacity: 0;
+                    transition: all .5s;
+                    color: $secondary-color;
+                }
+                
+                
+                
+                /*  Membuat dan style tip*/
+                .tooltipText::after {
+                    content: '';
+                    border-width: 5px;
+                    border-style: solid;
+                    border-color: #fff transparent transparent transparent;
+                    position: absolute;
+                    top: 100%;
+                    left: 40%;
+                    margin-left: 5%;
+                }
+                
+                /* Style Icon */
+                i {
+                    padding: 10px 15px;
+                    border-radius: 10px;
+                    color: $secondary-color;
+                    font-size: 20px;
+                }
+
+                
+                    .container {
+                        display: flex;
+                        justify-content: space-around;
+                        width: 100%;
+                        padding: 10px;
+                        margin: 10px 0;
+                        flex-wrap: wrap;
+                    }
+                                    
+                
+                /* Hover text tooltip */
+                .tooltip:hover .tooltipText{
+                    opacity: 1;
+                    transform: translateY(-10px);
+                }
+                
+                /* Hover Background icon */
+                .loisir:hover i {
+                    background-color: $secondary-color;
+                    color: white;
+                }
+
+                
             }
         }
     }
