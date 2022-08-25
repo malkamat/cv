@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <title>CV</title>
 </head>
@@ -12,13 +13,11 @@
 <body>
     <header class="header">
         <div class="header-left">
-            <figure class="header-left__photo"><img class="header-left__photo--image-arrondie"
-                    src="avatar.png" alt="photo de cv"></figure>
+            <figure class="header-left__photo"><img class="header-left__photo--image-arrondie" src="avatar.png" alt="photo de cv"></figure>
         </div>
         <div class="header-right">
             <h1 class="header-right__titre-principal"><strong class="header-right__titre-principal--prenom">
-                    MATHIEU </strong>VINCENSINI<br><em class="header-right__titre-principal--sous-titre">oppeur web
-                    en alternance</em></h1>
+                    MATHIEU </strong>VINCENSINI<br><em class="header-right__titre-principal--sous-titre">oppeur Javascript Full-stack</em></h1>
         </div>
     </header>
     <div class="main-wrapper">
@@ -26,12 +25,17 @@
             <article class="cv-aside-contact">
                 <h2 class="cv-aside-contact__titre">CONTACT</h2>
                 <ul class="cv-aside-contact__list">
-                    <li class="cv-aside-contact__item">Adresse<br>Toulouse, France</li>
-                    <li class="cv-aside-contact__item">Télephone:<br><a href="tel:+33786053829">07 86 05 38 29</a></li>
+                    <li class="cv-aside-contact__item">Adresse<br>Bordeaux, France</li>
+                    <li class="cv-aside-contact__item">Télephone:<br>
+                        <a href="tel:+33786053829">07 86 05 38 29</a>
+                    </li>
                     <li class="cv-aside-contact__item"> Email<br><a
-                            href="mailto:rimkavh@hotmail.com">rimkavh@hotmail.com</a></li>
-                    <li class="cv-aside-contact__item"> Github<br><a href="https://github.com/malkamat"
-                            target="_blank">malkamat</a>
+                            href="mailto:vincensini.mat@gmail.com">vincensini.mat@gmail.com</a></li>
+                    <li class="cv-aside-contact__item"><a href="https://github.com/malkamat"
+                            target="_blank">Github</a>
+                    </li>
+                    <li class="cv-aside-contact__item"> <a href="https://www.linkedin.com/in/mathieu-v-062908227/"
+                        target="_blank">Linkedin</a> 
                     </li>
                 </ul>
 
@@ -39,50 +43,96 @@
 
             </article>
             <article class="cv-aside-a-propos">
-                <h2 class="cv-aside-a-propos__titre">A PROPOS</h2>
-                <p class="cv-aside-a-propos__paragraphe">Âgé de 28 ans, je suis actuellement en reconversion professionnelle, et à la recherche d'un
-                    métier plus proche de mes passions, à savoir dans le domaine de l'informatique et des nouvelles
-                    technologies. Durant
-                    cette année, je compte reprendre mes études et commencer une formation en alternance afin
-                    d'atteindre mes
-                    objectifs de réorientation dans le domaine du développement web.</p>
-                <p class="cv-aside-a-propos__paragraphe">J'ai auparavant vécu 4 ans au Canada pour y faire des études et
-                    2 ans en Australie afin de perfectionner mon anglais. <br>
-                    Passionné de nouvelles technologies je souhaite intégrer une
-                    entreprise dans laquelle les valeurs humaines sont mises en avant.</p>
+                <h2 class="cv-aside-a-propos__titre">Compétences Informatiques</h2>
                 <p class="cv-aside-a-propos__paragraphe">
-                    <br>Rigoureux dans mon travail je suis disponible immédiatement pour commencer ma
-                    formation.
+
+                </p>
+                <p class="cv-aside-a-propos__paragraphe"><strong>Langages :</strong> <br>
+                    - Javascript
                     <br>
-                    J'habite Toulouse mais reste mobile sur la région Occitanie</p>
+                    - html
+                    <br>
+                    - css
+                    </p>
+                <p class="cv-aside-a-propos__paragraphe"><strong>Framework et technos front-end :</strong> <br>
+                    - React
+                    <br>
+                    - Vue
+                    <br>
+                    - Next
+                    <br>
+                    - MUI
+                    </p>
+                <p class="cv-aside-a-propos__paragraphe"><strong>Framework et technos back-end :</strong> <br>
+                    - nodeJS <br>
+                    - Express 
+                    </p>
+                <p class="cv-aside-a-propos__paragraphe"><strong>Base de données :</strong> <br>
+                    - MongoDB
+                    </p>
+                <p class="cv-aside-a-propos__paragraphe"><strong>Framework / pre-processeur css :</strong> <br>
+                    - tailwind
+                    <br>
+                    - sass
+                    </p>
+                <p class="cv-aside-a-propos__paragraphe"><strong>Workflow :</strong> <br>
+                    - git / github</p>
+                <p class="cv-aside-a-propos__paragraphe"><strong>IDE :</strong> <br>
+                    - VSCode</p>
+                <p class="cv-aside-a-propos__paragraphe"><strong>Cloud :</strong> <br>
+                    - AWS</p>
+                <p class="cv-aside-a-propos__paragraphe"><strong>Déploiement :</strong> <br>
+                    - Heroku <br>
+                    - Vercel <br>
+                </p>
+            </article>
+            <article class="cv-aside-a-propos">
+                <h2 class="cv-aside-a-propos__titre">A props de moi</h2>
+                <p class="cv-aside-a-propos__paragraphe">
+
+                </p>
+                <p class="cv-aside-a-propos__paragraphe">Développeur freelance depuis plus d'un an je souhaite intégrer une entreprise dans laquelle les valeurs humaines sont mises en avant et qui pourra me proposer un nouveau challenge technique pour continuer à monter en compétences.</p>
+                <p class="cv-aside-a-propos__paragraphe">
+                    <br>Dynamique, motivé, autonome et rigoureux dans mon travail je suis disponible immédiatement.</p>
             </article>
             <article class="cv-aside-loisirs">
                 <h2 class="cv-aside-loisirs__titre">
                     Loisirs
                 </h2>
-                <ul class="cv-aside-loisirs__list">
-                    <li class="cv-aside-loisirs__list--rond"><i class="fas fa-biking"></i></li>
-                    <li class="cv-aside-loisirs__list--rond"><i class="fas fa-gamepad"></i></li>
-                    <li class="cv-aside-loisirs__list--rond"><i class="fas fa-swimmer"></i></li>
-                </ul>
+                <div class="container">
+                    <div class="tooltip loisir">
+                        <span class="tooltipText fb">Jeux vidéo</span>
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <div class="tooltip loisir">
+                        <span class="tooltipText tw">Moto</span>
+                        <i class="fas fa-biking"></i>
+                    </div>
+                    <div class="tooltip loisir">
+                        <span class="tooltipText wa">Cinéma</span>
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div class="tooltip loisir">
+                        <span class="tooltipText wa">Voyager</span>
+                        <i class="fas fa-earth-europe"></i>
+                    </div>
+                </div>
+
 
             </article>
         </aside>
         <div class="cv">
             <section class="formation">
-                <h2 class="formation__titre"><i class="fas fa-briefcase"></i>FORMATIONS</h2>
+                <h2 class="formation__titre"><i class="fas fa-graduation-cap"></i>FORMATIONS</h2>
                 <div class="formation-container">
                     <div class="formation-container-gauche">
-                        <p class="formation-container-gauche__date--actual">Janvier 2021-Présent<br>Toulouse, France</p>
+                        <p class="formation-container-gauche__date--actual">Avril 2021-Juillet 2021<br>Lyon, France</p>
                     </div>
                     <div class="formation-container-droite">
                         <h3 class="formation-container-droite__titre">Openclassrooms</h3>
-                        <p class="formation-container-droite__info">(recherche d'alternance en cours)</p>
+                        <p class="formation-container-droite__info">Formation de développeur web</p>
                         <p class="formation-container-droite__info">OpenClassrooms est une école en ligne offrant des
-                            parcours diplômants et professionnalisants<br>L'alternance en ligne, telle qu'elle est mise
-                            en place chez
-                            OpenClassrooms, permet de : démarrer votre contrat à tout moment de l'année ; ajuster le
-                            rythme entreprise / formation aux besoins de l'entreprise.</p>
+                            parcours diplômants et professionnalisants</p>
                     </div>
 
 
@@ -122,12 +172,25 @@
                     Professionelles</h2>
                 <div class="experiences-professionelles-container">
                     <div class="experiences-professionelles-container-gauche">
+                        <p class="experiences-professionelles-container-gauche__date--actual">Juin
+                            2021- Présent<br>Bordeaux , France</p>
+                    </div>
+                    <div class="experiences-professionelles-container-droite">
+                        <h3 class="experiences-professionelles-container-droite__titre">Développeur Full-stack freelance</h3>
+                        <p class="experiences-professionelles-container-droite__info">Développement d'un web app pour Novicap</p>
+                        <p class="experiences-professionelles-container-droite__info">Novicap est une entreprise qui intervient pour réaliser des missions de coordination SPS, de conseil et d'assistance à la maitrise des risques, dans les secteurs du BTP, du génie civil, de l'industrie et des transports.
+                            <br>
+                            J'ai ainsi créer une web app couvrant l'ensemble des besoins du métier de coordonnateur SPS</p>
+                    </div>
+                </div>
+                <div class="experiences-professionelles-container">
+                    <div class="experiences-professionelles-container-gauche">
                         <p class="experiences-professionelles-container-gauche__date--actual">Mai
-                            2020-Présent<br>Toulouse, France</p>
+                            2020-Mars 2021<br>France</p>
                     </div>
                     <div class="experiences-professionelles-container-droite">
                         <h3 class="experiences-professionelles-container-droite__titre">StudentPop / Deliveroo</h3>
-                        <p class="experiences-professionelles-container-droite__info">missions pour étudiants</p>
+                        <p class="experiences-professionelles-container-droite__info">missions d'intérims / Livraisons de repas</p>
                         <p class="experiences-professionelles-container-droite__info">plateformes proposant des missions
                             courtes</p>
                     </div>
@@ -159,15 +222,12 @@
                 </div>
             </section>
             <section class="recommendations">
-                <h2 class="recommendations__titre"><i class="fas fa-briefcase"></i>Mes recommandations (Séction vide pour coller à la maquette d'origine)</h2>
+                <h2 class="recommendations__titre"><i class="fas fa-handshake"></i>Mes recommandations</h2>
                 <div class="recommendations-grid">
                     <div class="recommendations-grid-gauche">
-                        <h3>MATHIEU VINCENSINI</h3>
-                        <p>directeur, mon agence<br>Téléphone: 00 00 00 00 00<br>Email: rimkavh@hotmail.com</p>
-                    </div>
-                    <div class="recommendations-grid-droite">
-                        <h3>MATHIEU VINCENSINI</h3>
-                        <p>directeur, mon agence<br>Téléphone: 00 00 00 00 00<br>Email: rimkavh@hotmail.com</p>
+                        <h3>Rémi Rayssac</h3>
+                        <p>coordonateur SPS, NOVICAP<br>Téléphone: <a href="tel:+33676860889">06 76 86 08 89</a><br>Email:<a
+                            href="mailto:r.rayssac@novicap.fr"> r.rayssac@novicap.fr</a></p>
                     </div>
                 </div>
 
@@ -181,3 +241,5 @@
 </body>
 
 </html>
+
+
